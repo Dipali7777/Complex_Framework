@@ -1,0 +1,21 @@
+/*
+* Step 1 - Create a common Locator file in locator package (Follow all naming convention)
+* a - Create a constructor with driver
+* b - Create locator using @FindBy annotation
+* c - Add PageFactory.InitElements step into constructor
+* d - We Acheive Encapsulation here by accessing private DM outside of a class by getter
+* Step 2 - Create a action file in action package
+* a - Create a constructor with driver, extentTest
+* b - Create individual methods on each locator to perform action
+* c - Call all common function to perform action
+* d - create a common function to call in test.
+* i - this function returns the object of next page, if any
+* ii - this function has try/catch block to capture any failures
+* iii - if we want to navigate next page then should have return type of that page
+* Step 3 - Create a Test File to call action in test package.
+* a - Extends all BaseCLass
+* b - Pass Driver & ExtentTest to action class
+* c - call common function from action class
+* d - add assertion to validate/before navigate next action
+*
+*/
